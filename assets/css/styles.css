@@ -1,0 +1,40 @@
+.ayubbg {
+  background-color: #3edbf0 !important;
+}
+
+.prof_img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+name_heading {
+}
+
+.name_heading {
+  font-size: larger;
+}
+
+.name_heading {
+  font-size: 3.2rem;
+}
+
+project-date {
+  font-size: 0.7rem;
+}
+
+.project-date {
+  font-size: 0.9rem;
+}
+
+.hide-card {
+  border-color: white;
+}
+
+.no-uline {
+  text-decoration: none !important;
+}
+
+.img-custom {
+  max-width: 350;
+  max-height: 467px;
+}
