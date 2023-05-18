@@ -47,10 +47,6 @@ project-date {
 }
 
 .education-logo {
-  width: 50%;
-  height: auto;
-}
-.education-logo {
   width: 100%;
   height: 100px; /* Adjust the height as needed */
   object-fit: contain;
@@ -59,5 +55,10 @@ project-date {
 .project-image {
   width: 100%; /* Adjust the width as needed */
   height: auto;
+  object-fit: cover;
+}
+.gallery-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
