@@ -38,3 +38,26 @@ project-date {
   max-width: 350;
   max-height: 467px;
 }
+.card {
+  border: none;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.education-logo {
+  width: 50%;
+  height: auto;
+}
+.education-logo {
+  width: 100%;
+  height: 100px; /* Adjust the height as needed */
+  object-fit: contain;
+}
+
+.project-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  object-fit: cover;
+}
