@@ -204,7 +204,9 @@ footer p {
     text-align: center;
     display: inline-block;
 }
-
+.section {
+    padding-top: 115px;
+}
 .nav-bar a:hover {
     background-color: #1d1f22;
 }
