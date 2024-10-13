@@ -8,107 +8,36 @@
     <meta name="google-site-verification" content="ha3U45m9JiRCYBDZTpWLbIV7lhW-PBx6EXMW8R4tRHI" />
 
     <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "Comparison of Popular Embedded Processors",
-          "description": "An in-depth comparison of popular embedded processors, their architecture, performance, and applications.",
-          "author": {
-            "@type": "Person",
-            "name": "Ayuba Tahiru"
-          },
-          "datePublished": "2024-10-12",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Embedded System Engineering Hub"
-          }
-        }
-    </script>
+<!--    <script type="application/ld+json">-->
+<!--        {-->
+<!--          "@context": "https://schema.org",-->
+<!--          "@type": "Article",-->
+<!--          "headline": "Comparison of Popular Embedded Processors",-->
+<!--          "description": "An in-depth comparison of popular embedded processors, their architecture, performance, and applications.",-->
+<!--          "author": {-->
+<!--            "@type": "Person",-->
+<!--            "name": "Ayuba Tahiru"-->
+<!--          },-->
+<!--          "datePublished": "2024-10-12",-->
+<!--          "publisher": {-->
+<!--            "@type": "Organization",-->
+<!--            "name": "Embedded System Engineering Hub"-->
+<!--          }-->
+<!--        }-->
+<!--    </script>-->
 
     <title>Embedded Processor Comparison - Ayuba Tahiru</title>
 
     <!-- Bootstrap and Custom CSS -->
+<!--    <title>Ayuba Tahiru</title>-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal-images.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-        }
-
-        td {
-            text-align: left;
-        }
-
-        .container {
-            margin-top: 30px;
-        }
-
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        header {
-            background-color: #343a40;
-            padding: 20px 0;
-            color: white;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Styling the Back to MCU button like the header */
-        .nav-bar {
-            background-color: #007bff; /* Primary color */
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .nav-bar a {
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            text-decoration: none;
-            text-align: center;
-            display: inline-block;
-        }
-
-        .nav-bar a:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 
 <!--<body>-->
@@ -129,57 +58,12 @@
         </div>
     </nav>
 
-    <!-- Header -->
-<!--    <header class="text-center text-white bg-primary masthead">-->
-<!--        <div class="container">-->
-<!--            <h2 class="text-uppercase"><h2>Embedded Processor Architecture and Comparison</h2></h2>-->
-<!--&lt;!&ndash;            <p class="lead">Your source for technical tutorials, component analysis, and advanced embedded system solutions.</p>&ndash;&gt;-->
-<!--        </div>-->
-<!--    </header>-->
 
-    <!-- Navigation Bar -->
-<!--    <div class="text-center text-white bg-primary masthead">-->
-<!--    <div class="nav-bar">-->
-<!--&lt;!&ndash;        <a href="mcu_Intro.html"> class="text-uppercase"><h2>Back to MCU Introduction</h2></a>&ndash;&gt;-->
-<!--        <a href="mcu_Intro.html">Back to MCU Introduction</a>-->
-<!--    </div>-->
-
-    <!-- Navigation Bar with Footer Color -->
-
-
-    <!-- Navigation Bar with Footer Color -->
     <div class="nav-bar">
         <a href="mcu_Intro.html">Back to MCU Introduction</a>
         <a href="index.html">Back to Portfolio Page</a>
     </div>
 
-    <style>
-        /* Ensure the same background color as the footer */
-        .nav-bar {
-            background-color: #343a40; /* Matches the footer color */
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .nav-bar a {
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            text-decoration: none;
-            text-align: center;
-            display: inline-block;
-        }
-
-        .nav-bar a:hover {
-            background-color: #1d1f22;
-        }
-
-        footer {
-            background-color: #343a40; /* Same color for consistency */
-            color: white;
-            padding: 10px 0;
-        }
-    </style>
 
     <div class="container">
         <section class="section">
@@ -200,7 +84,7 @@
                 <strong>Applications:</strong> Simple control systems, low-power embedded devices, educational platforms.
             </p>
 <!--            <img src="assets/img/vonNeumann.png" alt="Von Neumann Architecture" class="img-fluid">-->
-            <img src="assets/img/vonNeumann.png"  alt="Von Neumann Architecture" class="img-fluid my-4" style="max-width: 600px; display: block; margin: 0 auto;">
+            <img src="assets/img/vonNeumann.png"  alt="Von Neumann Architecture" class="img-fluid my-4" style="width: 100%; height: auto; display: block; margin: 0 auto;">
         </section>
 
         <section class="section">
@@ -221,7 +105,7 @@
                 <strong>Applications:</strong> Microcontrollers (PIC, AVR), DSPs, high-speed control systems, real-time embedded applications.
             </p>
 <!--            <img src="vonNeumann.png" alt="Harvard Architecture" class="img-fluid">-->
-            <img src="assets/img/harvard.png"  alt="Harvard Architecture" class="img-fluid my-4" style="max-width: 600px; display: block; margin: 0 auto;">
+            <img src="assets/img/harvard.png"  alt="Harvard Architecture" class="img-fluid my-4" style="width: 100%; height: auto; display: block; margin: 0 auto;">
         </section>
 
         <section class="section">
@@ -241,8 +125,8 @@
             <p>
                 <strong>Applications:</strong> IoT devices, mobile phones, industrial systems, automotive systems, and wearables.
             </p>
-<!--            <img src="dummy-risc-architecture.png" alt="RISC Architecture" class="img-fluid">-->
-            <img src="assets/img/risc.png"  alt="RISC Architecture" class="img-fluid my-4" style="max-width: 600px; display: block; margin: 0 auto;">
+
+            <img src="assets/img/risc.png"  alt="RISC Architecture" class="img-fluid my-4" style="width: 100%; height: auto; display: block; margin: 0 auto;">
         </section>
 
         <section class="section">
@@ -262,15 +146,15 @@
             <p>
                 <strong>Applications:</strong> High-performance embedded systems, industrial control, automotive infotainment systems, general-purpose computing.
             </p>
-<!--            <img src="dummy-cisc-architecture.png" alt="CISC Architecture" class="img-fluid">-->
-            <img src="assets/img/risc.png"  alt="CISC Architecture"  class="img-fluid my-4" style="max-width: 600px; display: block; margin: 0 auto;">
+
+            <img src="assets/img/risc.png"  alt="CISC Architecture"  class="img-fluid my-4" style="width: 100%; height: auto; display: block; margin: 0 auto;">
         </section>
 
         <h2>Comparison of Popular Embedded Processors</h2>
         <p>
             After exploring the key processor architectures, here's a detailed comparison of popular embedded processors, including technical details about their performance, power consumption, and applications.
         </p>
-
+<div class="table-responsive">
         <table>
             <thead>
                 <tr>
@@ -340,11 +224,8 @@
                 </tr>
             </tbody>
         </table>
+    </div>
 
-<!--        <h3>Conclusion</h3>-->
-<!--        <p>-->
-<!--            The architecture of a processor directly impacts its performance, power consumption, and complexity. Whether it's the simplicity of Von Neumann or the efficiency of Harvard and RISC, selecting the right processor for your embedded application depends on the specific requirements. RISC-based processors, particularly ARM Cortex and RISC-V, dominate the embedded systems landscape due to their efficiency and adaptability.-->
-<!--        </p>-->
         <h3>Learn More About Memory</h3>
             <p>Interested in a more detailed discussion about Memory and how they work? Click the button below to dive deeper into the topic.</p>
 
@@ -359,7 +240,8 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

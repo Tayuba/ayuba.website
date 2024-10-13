@@ -63,3 +63,165 @@ project-date {
   object-fit: cover;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+header {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styling the Back to MCU button like the header */
+.nav-bar {
+    background-color: #007bff; /* Primary color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-bar a:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+header {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: #343a40;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-bar a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-bar a:hover {
+    background-color: #1d1f22;
+}
+
+.navbar-brand {
+    white-space: normal; /* Allow text to wrap on small screens */
+    font-size: 1.5rem; /* Default size for larger screens */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem; /* Further reduce font size for phones */
+    }
+}
