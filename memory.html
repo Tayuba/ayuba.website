@@ -1,168 +1,168 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
 
-<head>
-    <meta charset="utf-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="google-site-verification" content="ha3U45m9JiRCYBDZTpWLbIV7lhW-PBx6EXMW8R4tRHI" />
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">&ndash;&gt;-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+<!--    <meta name="google-site-verification" content="ha3U45m9JiRCYBDZTpWLbIV7lhW-PBx6EXMW8R4tRHI" />-->
 
-    <title>Detailed Overview of Memory in Embedded Systems - Ayuba Tahiru</title>
+<!--    <title>Detailed Overview of Memory in Embedded Systems - Ayuba Tahiru</title>-->
 
-    <!-- Bootstrap and Custom CSS -->
-<!--    <title>Ayuba Tahiru</title>-->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal-images.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-
-</head>
-
-<!--<body>-->
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Memory in Embedded Systems</a>
-            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded bg-secondary" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="mcu_Intro.html">MCU Introduction</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="cpu.html">MCU Architecture</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--    &lt;!&ndash; Bootstrap and Custom CSS &ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Ayuba Tahiru</title>&ndash;&gt;-->
+<!--    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">-->
+<!--    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">-->
+<!--    <link rel="stylesheet" href="assets/css/Projects-Grid-Horizontal-images.css">-->
+<!--    <link rel="stylesheet" href="assets/css/styles.css">-->
 
 
-    <div class="container">
-        <section class="section">
-            <h3>Memory in Embedded Systems</h3>
-            <p>
-                Memory is a critical component in embedded systems, as it stores both the programs that drive the system’s behavior and the data that the system processes. In embedded systems, memory can be classified into two primary types: volatile memory and non-volatile memory. Each plays a distinct role, and both are essential for the proper functioning of any embedded system.
-            </p>
-            <p>In this article, I will dive deeply into volatile and non-volatile memory, discussing their roles, types, applications, and practical usage in embedded systems.</p>
+<!--</head>-->
 
-        <!-- Volatile Memory Section -->
-            <h3>Volatile Memory (RAM)</h3>
-            <p>Volatile memory refers to memory that loses its stored information once power is removed. The most common type of volatile memory in embedded systems is Random Access Memory (RAM). RAM is used for temporary data storage during program execution, acting as a workspace for the CPU to store variables, stacks, and intermediate computations.</p>
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">-->
+<!--    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">-->
+<!--        <div class="container">-->
+<!--            <a class="navbar-brand" href="index.html">Memory in Embedded Systems</a>-->
+<!--            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded bg-secondary" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <i class="fa fa-bars"></i>-->
+<!--            </button>-->
+<!--            <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--                <ul class="navbar-nav ms-auto">-->
+<!--                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>-->
+<!--                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="mcu_Intro.html">MCU Introduction</a></li>-->
+<!--                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="cpu.html">MCU Architecture</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </nav>-->
 
-            <h4>Types of Volatile Memory:</h4>
-            <ul>
-                <li><strong>Static RAM (SRAM):</strong> SRAM stores data in flip-flops and doesn’t require refreshing. It’s fast but more expensive and used in small memory caches.</li>
-                <li><strong>Dynamic RAM (DRAM):</strong> DRAM stores data in capacitors and needs periodic refreshing. It’s slower but cheaper and more compact than SRAM, making it ideal for larger memory needs.</li>
-            </ul>
 
-            <h4>Practical Example: Using RAM in Embedded Systems</h4>
-            <p>In an embedded system like an STM32 microcontroller, RAM is used to store temporary data such as sensor readings or variable calculations during program execution. For instance:</p>
+<!--    <div class="container">-->
+<!--        <section class="section">-->
+<!--            <h3>Memory in Embedded Systems</h3>-->
+<!--            <p>-->
+<!--                Memory is a critical component in embedded systems, as it stores both the programs that drive the system’s behavior and the data that the system processes. In embedded systems, memory can be classified into two primary types: volatile memory and non-volatile memory. Each plays a distinct role, and both are essential for the proper functioning of any embedded system.-->
+<!--            </p>-->
+<!--            <p>In this article, I will dive deeply into volatile and non-volatile memory, discussing their roles, types, applications, and practical usage in embedded systems.</p>-->
 
-            <pre><code>int temperature_buffer[100]; // Allocates space in RAM for 100 temperature readings</code></pre>
+<!--        &lt;!&ndash; Volatile Memory Section &ndash;&gt;-->
+<!--            <h3>Volatile Memory (RAM)</h3>-->
+<!--            <p>Volatile memory refers to memory that loses its stored information once power is removed. The most common type of volatile memory in embedded systems is Random Access Memory (RAM). RAM is used for temporary data storage during program execution, acting as a workspace for the CPU to store variables, stacks, and intermediate computations.</p>-->
 
-            <p>This memory is wiped when the system loses power, making it suitable for short-term data storage but not for permanent data retention.</p>
+<!--            <h4>Types of Volatile Memory:</h4>-->
+<!--            <ul>-->
+<!--                <li><strong>Static RAM (SRAM):</strong> SRAM stores data in flip-flops and doesn’t require refreshing. It’s fast but more expensive and used in small memory caches.</li>-->
+<!--                <li><strong>Dynamic RAM (DRAM):</strong> DRAM stores data in capacitors and needs periodic refreshing. It’s slower but cheaper and more compact than SRAM, making it ideal for larger memory needs.</li>-->
+<!--            </ul>-->
 
-            <h4>Key Functions of RAM in Embedded Systems:</h4>
-            <ul>
-                <li>Temporary data storage: RAM is used to hold temporary data that is created and destroyed during program execution.</li>
-                <li>Variable storage: Any variable or buffer that changes frequently during program execution resides in RAM.</li>
-                <li>Stack and heap: RAM stores the stack, which holds function call information, and the heap, which is used for dynamic memory allocation.</li>
-            </ul>
+<!--            <h4>Practical Example: Using RAM in Embedded Systems</h4>-->
+<!--            <p>In an embedded system like an STM32 microcontroller, RAM is used to store temporary data such as sensor readings or variable calculations during program execution. For instance:</p>-->
 
-        <!-- Non-Volatile Memory Section -->
-            <h3>Non-Volatile Memory (Flash/EEPROM)</h3>
-            <p>Non-volatile memory retains its data even when power is removed, making it ideal for storing programs, configuration settings, and any data that must survive power cycles.</p>
+<!--            <pre><code>int temperature_buffer[100]; // Allocates space in RAM for 100 temperature readings</code></pre>-->
 
-            <h4>Types of Non-Volatile Memory:</h4>
-            <ul>
-                <li><strong>Flash Memory:</strong> Flash memory is used for firmware storage and larger blocks of data. It’s slower to write to but offers higher storage capacity. Commonly used for firmware updates and code storage in embedded systems.</li>
-                <li><strong>EEPROM:</strong> EEPROM allows byte-level writing and is often used to store small configuration settings or calibration data. It has a limited number of write cycles, making it suitable for data that’s updated infrequently.</li>
-            </ul>
+<!--            <p>This memory is wiped when the system loses power, making it suitable for short-term data storage but not for permanent data retention.</p>-->
 
-            <h4>Practical Example: Using Flash in Embedded Systems</h4>
-            <p>In an STM32 microcontroller, flash memory stores the firmware code that is executed when the microcontroller is powered on. For example, the program that reads data from sensors and displays it on a screen would be stored in the flash memory. Whenever the system is turned on, the code is retrieved from flash and executed.</p>
+<!--            <h4>Key Functions of RAM in Embedded Systems:</h4>-->
+<!--            <ul>-->
+<!--                <li>Temporary data storage: RAM is used to hold temporary data that is created and destroyed during program execution.</li>-->
+<!--                <li>Variable storage: Any variable or buffer that changes frequently during program execution resides in RAM.</li>-->
+<!--                <li>Stack and heap: RAM stores the stack, which holds function call information, and the heap, which is used for dynamic memory allocation.</li>-->
+<!--            </ul>-->
 
-            <p>EEPROM is commonly used to store user settings, such as the preferred temperature in a thermostat. Even after a power cycle, the setting is retained as it is stored in non-volatile EEPROM:</p>
+<!--        &lt;!&ndash; Non-Volatile Memory Section &ndash;&gt;-->
+<!--            <h3>Non-Volatile Memory (Flash/EEPROM)</h3>-->
+<!--            <p>Non-volatile memory retains its data even when power is removed, making it ideal for storing programs, configuration settings, and any data that must survive power cycles.</p>-->
 
-            <pre><code>EEPROM.write(0x00, preferred_temperature);  // Store preferred temperature in EEPROM</code></pre>
+<!--            <h4>Types of Non-Volatile Memory:</h4>-->
+<!--            <ul>-->
+<!--                <li><strong>Flash Memory:</strong> Flash memory is used for firmware storage and larger blocks of data. It’s slower to write to but offers higher storage capacity. Commonly used for firmware updates and code storage in embedded systems.</li>-->
+<!--                <li><strong>EEPROM:</strong> EEPROM allows byte-level writing and is often used to store small configuration settings or calibration data. It has a limited number of write cycles, making it suitable for data that’s updated infrequently.</li>-->
+<!--            </ul>-->
 
-            <h4>Flash vs. EEPROM:</h4>
-            <ul>
-                <li><strong>Flash:</strong> Used for large storage tasks, such as storing entire programs or large blocks of data, but requires erasing large sectors before writing.</li>
-                <li><strong>EEPROM:</strong> Allows for more granular byte-wise access, making it ideal for saving settings or configuration parameters, though it has a limited number of write cycles.</li>
-            </ul>
+<!--            <h4>Practical Example: Using Flash in Embedded Systems</h4>-->
+<!--            <p>In an STM32 microcontroller, flash memory stores the firmware code that is executed when the microcontroller is powered on. For example, the program that reads data from sensors and displays it on a screen would be stored in the flash memory. Whenever the system is turned on, the code is retrieved from flash and executed.</p>-->
 
-        <!-- Comparison of Memory Types -->
-        <div class="table-responsive">
-            <h3>Comparison of Volatile and Non-Volatile Memory</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Function</th>
-                        <th>Advantages</th>
-                        <th>Disadvantages</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SRAM</td>
-                        <td>Stores temporary data, very fast</td>
-                        <td>Fast access, no refreshing required</td>
-                        <td>More expensive, less storage density</td>
-                    </tr>
-                    <tr>
-                        <td>DRAM</td>
-                        <td>Main memory storage for larger systems</td>
-                        <td>High density, cheaper</td>
-                        <td>Slower, requires refreshing</td>
-                    </tr>
-                    <tr>
-                        <td>Flash Memory</td>
-                        <td>Stores firmware, bootloaders, large blocks of data</td>
-                        <td>Non-volatile, high capacity</td>
-                        <td>Slower write speeds, needs block erasure</td>
-                    </tr>
-                    <tr>
-                        <td>EEPROM</td>
-                        <td>Stores user settings, small configurations</td>
-                        <td>Non-volatile, byte-level access</td>
-                        <td>Limited write cycles, slower than RAM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<!--            <p>EEPROM is commonly used to store user settings, such as the preferred temperature in a thermostat. Even after a power cycle, the setting is retained as it is stored in non-volatile EEPROM:</p>-->
+
+<!--            <pre><code>EEPROM.write(0x00, preferred_temperature);  // Store preferred temperature in EEPROM</code></pre>-->
+
+<!--            <h4>Flash vs. EEPROM:</h4>-->
+<!--            <ul>-->
+<!--                <li><strong>Flash:</strong> Used for large storage tasks, such as storing entire programs or large blocks of data, but requires erasing large sectors before writing.</li>-->
+<!--                <li><strong>EEPROM:</strong> Allows for more granular byte-wise access, making it ideal for saving settings or configuration parameters, though it has a limited number of write cycles.</li>-->
+<!--            </ul>-->
+
+<!--        &lt;!&ndash; Comparison of Memory Types &ndash;&gt;-->
+<!--        <div class="table-responsive">-->
+<!--            <h3>Comparison of Volatile and Non-Volatile Memory</h3>-->
+<!--            <table>-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Type</th>-->
+<!--                        <th>Function</th>-->
+<!--                        <th>Advantages</th>-->
+<!--                        <th>Disadvantages</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    <tr>-->
+<!--                        <td>SRAM</td>-->
+<!--                        <td>Stores temporary data, very fast</td>-->
+<!--                        <td>Fast access, no refreshing required</td>-->
+<!--                        <td>More expensive, less storage density</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>DRAM</td>-->
+<!--                        <td>Main memory storage for larger systems</td>-->
+<!--                        <td>High density, cheaper</td>-->
+<!--                        <td>Slower, requires refreshing</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>Flash Memory</td>-->
+<!--                        <td>Stores firmware, bootloaders, large blocks of data</td>-->
+<!--                        <td>Non-volatile, high capacity</td>-->
+<!--                        <td>Slower write speeds, needs block erasure</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>EEPROM</td>-->
+<!--                        <td>Stores user settings, small configurations</td>-->
+<!--                        <td>Non-volatile, byte-level access</td>-->
+<!--                        <td>Limited write cycles, slower than RAM</td>-->
+<!--                    </tr>-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--        </div>-->
+<!--&lt;!&ndash;        </section>&ndash;&gt;-->
+
+<!--        &lt;!&ndash; Applications in Embedded Systems &ndash;&gt;-->
+
+<!--            <h3>Applications in Embedded Systems</h3>-->
+<!--            <p>-->
+<!--                Both volatile and non-volatile memory play essential roles in embedded systems, with practical applications including:-->
+<!--            </p>-->
+<!--            <ul>-->
+<!--                <li><strong>Firmware Updates:</strong> Flash memory is often used for over-the-air (OTA) firmware updates in IoT devices. The new firmware is downloaded and written to flash memory, which is then executed on the next reboot.</li>-->
+<!--                <li><strong>Data Logging Systems:</strong> Non-volatile memory is vital in data logging applications, where sensor data must be stored persistently. For example, a temperature monitoring system may log readings in flash memory and periodically transmit the data to a server.</li>-->
+<!--                <li><strong>User Configuration:</strong> EEPROM is commonly used to store user preferences, such as volume levels, screen brightness, or custom settings. These values are retained even if the device is powered off.</li>-->
+<!--                <li><strong>Real-World Example:</strong> In a washing machine controller, flash memory stores the control program (for washing modes), while EEPROM stores user settings (e.g., preferred water temperature), both of which are retained across power cycles.</li>-->
+<!--            </ul>-->
 <!--        </section>-->
 
-        <!-- Applications in Embedded Systems -->
+<!--    </div>-->
 
-            <h3>Applications in Embedded Systems</h3>
-            <p>
-                Both volatile and non-volatile memory play essential roles in embedded systems, with practical applications including:
-            </p>
-            <ul>
-                <li><strong>Firmware Updates:</strong> Flash memory is often used for over-the-air (OTA) firmware updates in IoT devices. The new firmware is downloaded and written to flash memory, which is then executed on the next reboot.</li>
-                <li><strong>Data Logging Systems:</strong> Non-volatile memory is vital in data logging applications, where sensor data must be stored persistently. For example, a temperature monitoring system may log readings in flash memory and periodically transmit the data to a server.</li>
-                <li><strong>User Configuration:</strong> EEPROM is commonly used to store user preferences, such as volume levels, screen brightness, or custom settings. These values are retained even if the device is powered off.</li>
-                <li><strong>Real-World Example:</strong> In a washing machine controller, flash memory stores the control program (for washing modes), while EEPROM stores user settings (e.g., preferred water temperature), both of which are retained across power cycles.</li>
-            </ul>
-        </section>
+<!--    &lt;!&ndash; Footer &ndash;&gt;-->
+<!--    <footer class="text-center footer">-->
+<!--        <div class="container">-->
+<!--            <p>© 2024 Ayuba Tahiru</p>-->
+<!--        </div>-->
+<!--    </footer>-->
 
-    </div>
+<!--    &lt;!&ndash; Bootstrap JS &ndash;&gt;-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--</body>-->
 
-    <!-- Footer -->
-    <footer class="text-center footer">
-        <div class="container">
-            <p>© 2024 Ayuba Tahiru</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+<!--</html>-->
